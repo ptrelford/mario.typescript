@@ -56,8 +56,8 @@ function update() {
     jump(arrows, mario);
     gravity(mario);
     physics(mario);
-    image.style.posLeft = w/2-16+mario.x;
-    image.style.posTop = canvas.offsetTop + h - 50 - 31 - mario.y;
+    image.style.left = (w / 2 - 16 + mario.x) + "px";
+    image.style.top = (canvas.offsetTop + h - 50 - 31 - mario.y) + "px";
     var el = <HTMLImageElement> document.getElementById("image");    
     var src = "mario" + verb(mario) + mario.dir + ".gif"
     if (el.src.indexOf(src) == -1) el.src = src;
